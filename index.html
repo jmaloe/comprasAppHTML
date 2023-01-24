@@ -1,0 +1,57 @@
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css"/>
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script>
+        $(document).bind('mobileinit',function(){
+            $.mobile.changePage.defaults.changeHash = false;
+            $.mobile.hashListeningEnabled = false;
+            $.mobile.pushStateEnabled = false;
+        });
+    </script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/database.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+<form data-theme="a">
+  <div data-role="page">
+	<div data-role="header"><h1>Control de consumo</h1></div>    
+    <div role="main" class="ui-content">
+    <div>
+        <div id="lista_productos" class="cont-header">                
+                <input name="producto" id="producto" data-type="search" placeholder="buscar">
+                <ul data-role="listview" data-filter="true" data-input="#producto" class="productos" id="productos"></ul>
+                <button data-role="button" data-inline="true" data-icon="check" id="agregar">Agregar</button>
+        </div>
+    </div>
+        <table class="ui-body-a ui-shadow table-stripe ui-responsive">
+            <thead>
+                <tr class="ui-bar-d">
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Cant.</th>
+                <th>Tot.$</th>
+                <th></th>
+                </tr>
+            </thead>
+            <tbody id="mi_lista"></tbody>
+            <tfoot class="piedepagina">
+                <tr>
+                    <td><b>Total. $</b>
+                    <input type="text" id="gran-total" readonly value="0"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <p id="total_items"></p>
+ 
+    <div data-role="footer"><h1>V.2022.10 By dic.malo@gmail.com</h1></div>
+ </div> 
+ </form>  
+</body>
+</html>

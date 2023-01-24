@@ -1,0 +1,182 @@
+h1{
+	width: 100%;	
+	margin: 0 !important;	
+}
+
+table{
+	width: 100%;
+	border-collapse: collapse;	
+}
+
+td, th{
+	padding: 2px !important;
+	overflow: hidden;
+}
+
+td{
+	max-width: 125px;
+}
+
+th{
+	background: #BCBCBC;
+}
+.cont-header{	
+	padding:4px;
+	min-height:25px;
+	height:3%;
+}
+
+.cont-header div{
+	display:inline-flex;
+	font-weight:bold;
+	font-size:14px;	
+}
+
+p, span.center{
+	width:100%;
+	text-align:center;
+}
+
+.content{	
+	min-height:80%;
+	max-height:84%;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+
+.btn{
+	min-width: 25px;
+	min-height: 25px;
+	max-width:30px;
+	max-height:30px;
+	display:inline-flex;
+	vertical-align:middle;	
+	cursor:pointer;
+}
+
+.add{
+	background-image:url('../images/add.png');
+	background-size:100% 100%;
+}
+
+.add:active{
+	background-image:url('../images/add-active.png');
+	background-size:100% 100%;
+}
+.remove{
+	background-image:url('../images/remove-red.png');
+	background-size:100% 100%;
+}
+
+.remove:active{
+	background-image:url('../images/remove-blue.png');
+	background-size:100% 100%;
+}
+
+ul{
+	width:100%;
+	padding:2px;
+}
+
+li{
+	display:inline-flex;
+	list-style:none;
+}
+
+input[type=text], input[type=number]{
+	text-align:center;	
+}
+
+.una-part{
+	width:8%;
+}
+
+.dos-parts{
+	width:16%;	
+}
+
+.tres-parts{
+	width:25%;
+}
+
+.cuatro-parts{
+	width:33%;
+}
+
+.cinco-parts{
+	width:41%;
+}
+.seis-parts{
+	width:50%;
+}
+
+#lista_productos{
+	vertical-align:middle;
+	margin-left:4px;
+	line-height:30px;
+}
+
+.articulo{
+	width:100%;	
+}
+
+#producto{
+	border-radius:5px 5px 5px 5px;
+	width:100%;
+	font-size: 21px;
+}
+
+#productos{
+	position: absolute;
+	display: none;
+	z-index: 100;
+	background: white;
+	border: 1px solid;
+	border-radius:5px 5px 5px 5px;
+}
+
+#productos>li{
+	cursor: pointer;
+}
+
+.checkeado{
+	background-color: #9EFFAA;
+	/*color:#C0C0C0;*/
+	/*text-decoration:line-through;*/
+}
+
+td{
+	vertical-align: middle !important;
+}
+
+.ui-content{
+	padding:8px !important;
+}
+
+.piedepagina{	
+	background: #BCBCBC;
+}
+
+.delete-item{
+	float: right;
+	color: red;
+	width: 30px;
+	text-align: center;
+	background-color: #E0E0E0;
+	border: 2px solid #B9B9B9;
+    border-radius: 3px;
+}
+.delete-item:active{
+	background-color: #FFB4B4;
+}
+.product_name{
+	font-weight: bold;
+}
+/*li>p{
+	background-color: #E1E1E1;
+	display: inline-flex;
+}
+li>span{
+	display: inline-flex;
+	float:right;
+}*/
